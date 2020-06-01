@@ -1,0 +1,319 @@
+/* geral */
+body, p, h1, h2, input, textarea {
+  margin: 0;
+  font-family: Roboto;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* navbar */
+#navbar {
+  background-color: #FFF; 
+  color: rgb(16, 50, 97);
+  padding: 0 15px;
+  height: 90px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li,#navbar nav {
+  display: inline-block;
+}
+
+#navbar h2 {
+  margin: 0;
+  line-height: 60px;
+  margin-left: 250px;
+  color: rgb(247, 146, 56);
+}
+
+#navbar img {
+  height: 70px;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 10px;
+}
+
+#navbar nav {
+  float: right;
+}
+
+#navbar ul {
+  margin-top: 22px;
+}
+
+#navbar li {
+  margin: 0 10px;
+}
+
+#navbar-list li a {
+  text-decoration: none;
+  color: rgb(16, 50, 97);
+  padding-top: 22px;
+  }
+
+#navbar-list li a:hover {
+  border-bottom: 1px solid #FFF;
+}
+
+/* banner */
+#main-banner {
+  height: 0vh;
+  background-image: url('../img/cgm_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 75vh;
+
+}
+
+#banner-info {
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: #FFF;
+  padding: 50px;
+}
+
+#banner-info img {
+  height: 120px;
+  border-radius: 1%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#banner-info p {
+  background-color: #FFF
+  font-weight: bold;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+}
+
+/* about */
+
+#about-section {
+  text-align: center;
+  background-color: #FFF;
+  color:  rgb(16, 50, 97);
+  padding-top: 40px;
+  height: 400px;
+  
+}
+
+#about-section h2 {
+  margin-bottom: 20px;
+  }
+
+#about-section p {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 30px;
+}
+
+/* skills */
+
+#skills-section {
+  margin-top: -100px;
+  background-color: #FFF;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid rgb(16, 50, 97);
+  border-radius: 10px;
+}
+
+#skills-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-container {
+  flex: 1 1 1;
+  text-align: center;
+  padding: 40px 25px;
+  width: 300px;
+}
+
+.central {
+  border-left: 1px solid rgb(179, 177, 177);
+  border-right: 1px solid rgb(179, 177, 177);
+}
+
+.skills-container h3 {
+  color:  rgb(16, 50, 97);
+  font-size: 20px;
+}
+
+.skills-container img {
+  height: 60px;
+  padding: 0px;
+  margin-bottom: 0px;
+  border-top: 0px solid rgb(16, 50, 97);
+  border-left: 0px solid rgb(16, 50, 97);
+  border-bottom: 0px solid rgb(16, 50, 97);
+  border-right: 0px solid rgb(16, 50, 97);
+  }
+
+.skills-container .subtitle {
+  font-weight: bold;
+  color: rgb(16, 50, 97);
+  margin-top: 50px;
+  margin-bottom: 15px;;
+}
+
+.skills-container p {
+  line-height: 30px;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* footer */
+
+footer {
+  padding: 50px 0;
+  background-color: rgb(16, 50, 97);
+  color: #FFF;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rodape {
+  margin: 0;
+}
+
+footer p {
+  margin-top: 15px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 20px;
+}
+
+footer form {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer input, footer textarea {
+  border: none;
+  padding: 13px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+}
+
+.erro-form {
+	color: white;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.sucesso-form {
+	color: white;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+/* Resposivo celulares */
+@media(max-width: 450px) {
+
+  /* html - 18px -> 1rem, 1.2rem -> 18px */
+
+  /* geral */
+    p, input, textarea #navbar-list li a {
+      font-size: 0.8rem;
+    }
+
+  /* navbar */
+
+  #navbar h2 {
+    display: none;
+  }
+
+  #navbar img {
+    top: 9px;
+    height: 45px;
+  }
+
+  #navbar ul {
+    margin-top: 1.6rem;
+  }
+
+  /* banner */
+
+  #main-banner {
+    height: 40vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+ 
+  #banner-info {
+    width: 60%;
+  }
+
+  #banner-info p {
+    margin:0;
+    width: auto;
+  }
+
+  /* about */
+
+  #about-section {
+    padding: 2rem;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  /* skills */
+
+  #skills-section {
+    margin-top: -10px;
+    width: 85%;
+
+  }
+
+
+  #skills-section .container {
+  flex-direction: column;  
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  .skills-container h3, .skills-container .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .skills-container {
+    padding: 20px;
+  }
+
+  .skills-container p {
+    font-size: 0.8rem;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px 15px;
+  }
+
+  footer form {
+    width: 80%;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer h2{
+    font-size: 1.8rem;
+  }
+
+}
